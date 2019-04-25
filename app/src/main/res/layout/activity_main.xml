@@ -5,10 +5,26 @@
     android:layout_height="match_parent"
     tools:context="com.example.asus.marqueeview.MainActivity">
 
-    <com.example.marqueeview.MarqueeView
-        android:id="@+id/mv_marquee"
+    <ScrollView
         android:layout_width="368dp"
-        android:layout_height="100dp">
-    </com.example.marqueeview.MarqueeView>
+        android:layout_height="wrap_content"
+        tools:layout_editor_absoluteX="8dp"
+        tools:layout_editor_absoluteY="0dp">
 
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <com.example.marqueeview.MarqueeView
+                android:id="@+id/mv_marquee"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"></com.example.marqueeview.MarqueeView>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="111111111233" />
+        </LinearLayout>
+    </ScrollView>
 </android.support.constraint.ConstraintLayout>

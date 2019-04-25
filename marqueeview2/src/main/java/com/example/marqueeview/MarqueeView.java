@@ -99,7 +99,7 @@ public class MarqueeView extends FrameLayout {
     @Override
     public boolean dispatchTouchEvent(MotionEvent ev) {
         if (ev.getAction() == MotionEvent.ACTION_MOVE) {
-            return true;//禁止滑動事件攔截
+            return false;//禁止滑動事件攔截,交给父控件处理
         }
         return super.dispatchTouchEvent(ev);
     }
